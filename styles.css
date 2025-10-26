@@ -29,6 +29,7 @@ body {
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5; /* Added for better readability */
+  overflow-x: hidden;
 }
 
 a {
@@ -126,10 +127,11 @@ nav {
 .nav__bar {
   max-width: var(--max-width);
   margin: auto;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .nav__menu__btn {
@@ -151,6 +153,7 @@ nav {
   background-color: var(--secondary-color);
   transform: translateY(-100vh); /* Hide completely off-screen */
   transition: transform 0.4s ease-in-out;
+
 }
 
 .nav__links.open {
@@ -171,6 +174,8 @@ nav {
 .header__content {
   max-width: 600px;
   padding: 0 1rem; /* Added padding to align with container */
+
+
 }
 
 .header__content h1 {
